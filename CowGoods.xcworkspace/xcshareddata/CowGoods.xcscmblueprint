@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "379f212e-a902-4fbb-bfbe-5d86844a0a23++4867",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "379f212e-a902-4fbb-bfbe-5d86844a0a23++4867" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "379f212e-a902-4fbb-bfbe-5d86844a0a23++4867" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "28DC8835-CC36-4651-8FB4-87258F3DE57B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "379f212e-a902-4fbb-bfbe-5d86844a0a23++4867" : "CowGoods\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CowGoods",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CowGoods.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/123.57.204.40",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "379f212e-a902-4fbb-bfbe-5d86844a0a23++4867"
+    }
+  ]
+}

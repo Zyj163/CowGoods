@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DDBottomView" customModule="CowGoods" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wMo-g5-ddX">
+                    <rect key="frame" x="240" y="0.0" width="360" height="49"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jle-cW-B2y">
+                            <rect key="frame" x="0.0" y="0.0" width="180" height="49"/>
+                            <color key="backgroundColor" red="1" green="0.70398808280000003" blue="0.1973231902" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="加入购物车">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clickOnAddToCart:" destination="iN0-l3-epB" eventType="touchUpInside" id="6fq-NS-eCX"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yld-o7-pI1">
+                            <rect key="frame" x="180" y="0.0" width="180" height="49"/>
+                            <color key="backgroundColor" red="1" green="0.47506978960000001" blue="0.29521089150000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="立即购买">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clickOnBuy:" destination="iN0-l3-epB" eventType="touchUpInside" id="t7x-FX-njf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="jle-cW-B2y" firstAttribute="top" secondItem="wMo-g5-ddX" secondAttribute="top" id="FJK-HU-RB0"/>
+                        <constraint firstItem="Yld-o7-pI1" firstAttribute="leading" secondItem="jle-cW-B2y" secondAttribute="trailing" id="Mfq-Ou-3pO"/>
+                        <constraint firstItem="Yld-o7-pI1" firstAttribute="leading" secondItem="jle-cW-B2y" secondAttribute="trailing" id="OJj-xV-KWL"/>
+                        <constraint firstItem="jle-cW-B2y" firstAttribute="width" secondItem="Yld-o7-pI1" secondAttribute="width" id="OX0-ms-B8f"/>
+                        <constraint firstAttribute="bottom" secondItem="jle-cW-B2y" secondAttribute="bottom" id="Pmv-yi-G7G"/>
+                        <constraint firstAttribute="trailing" secondItem="Yld-o7-pI1" secondAttribute="trailing" id="Yno-ei-9E5"/>
+                        <constraint firstAttribute="bottom" secondItem="Yld-o7-pI1" secondAttribute="bottom" id="ZN4-BL-dIo"/>
+                        <constraint firstItem="jle-cW-B2y" firstAttribute="leading" secondItem="wMo-g5-ddX" secondAttribute="leading" id="cQA-X0-y8G"/>
+                        <constraint firstItem="Yld-o7-pI1" firstAttribute="top" secondItem="wMo-g5-ddX" secondAttribute="top" id="ja5-dF-289"/>
+                    </constraints>
+                </view>
+                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rgo-wc-Uez">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="49"/>
+                    <items>
+                        <tabBarItem title="客服" image="kefu" id="nvK-mv-gDN"/>
+                        <tabBarItem title="收藏" image="collect_normal" id="PoW-fY-VfG"/>
+                        <tabBarItem title="购物车" image="cart" id="a06-O9-Qhr"/>
+                    </items>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="Ro8-m0-ol6"/>
+                    </connections>
+                </tabBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wMo-g5-ddX" firstAttribute="leading" secondItem="Rgo-wc-Uez" secondAttribute="trailing" id="08D-sG-v4s"/>
+                <constraint firstAttribute="bottom" secondItem="Rgo-wc-Uez" secondAttribute="bottom" id="5wT-vb-Mco"/>
+                <constraint firstAttribute="bottom" secondItem="wMo-g5-ddX" secondAttribute="bottom" id="912-Y9-oNO"/>
+                <constraint firstItem="Rgo-wc-Uez" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DqI-bX-tQo"/>
+                <constraint firstItem="Rgo-wc-Uez" firstAttribute="width" secondItem="wMo-g5-ddX" secondAttribute="width" multiplier="1:1.5" id="Ztk-MQ-YBV"/>
+                <constraint firstAttribute="trailing" secondItem="wMo-g5-ddX" secondAttribute="trailing" id="gJq-0p-3GV"/>
+                <constraint firstItem="wMo-g5-ddX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="l3Y-vT-k94"/>
+                <constraint firstItem="Rgo-wc-Uez" firstAttribute="width" secondItem="jle-cW-B2y" secondAttribute="width" multiplier="1:1.5" id="pAT-Jo-dku"/>
+                <constraint firstItem="Rgo-wc-Uez" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xIX-v1-SEa"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="pAT-Jo-dku"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="tabbar" destination="Rgo-wc-Uez" id="fjX-fK-GYn"/>
+            </connections>
+            <point key="canvasLocation" x="-380" y="763.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cart" width="25" height="25"/>
+        <image name="collect_normal" width="20" height="20"/>
+        <image name="kefu" width="20" height="20"/>
+    </resources>
+</document>

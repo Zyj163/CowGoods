@@ -1,0 +1,6 @@
+framework module Pods_CowGoods {
+  umbrella header "Pods-CowGoods-umbrella.h"
+
+  export *
+  module * { export * }
+}
